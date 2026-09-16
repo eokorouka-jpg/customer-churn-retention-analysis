@@ -223,3 +223,23 @@ customer-churn-retention-analysis/
 - **Power BI Dashboard:** Open `powerbi/customer_churn_analysis.pbix` in Power BI Desktop to explore the interactive dashboard.
 - **Dashboard Preview:** The dashboard screenshots above provide a quick view of the final Power BI report without requiring Power BI Desktop.
 - **Dataset:** The source dataset used for the analysis is stored in the `data` folder.
+
+## Limitations
+
+- The analysis identifies associations between customer characteristics and churn but does not establish causal relationships.
+- The dataset represents a snapshot of customer information, so changes in customer behaviour over time cannot be evaluated.
+- The exploratory risk score was created using characteristics associated with churn in this dataset and was evaluated on the same data used to define it.
+- The risk score is therefore a segmentation tool rather than a validated predictive model. A production approach would require validation on unseen data and appropriate model evaluation.
+- Some observed relationships may be influenced by other customer characteristics not isolated in this analysis.
+
+## Conclusion
+
+This project analysed **7,043 telecom customers** using Python, MySQL, and Power BI to identify patterns associated with customer churn.
+
+The analysis found an overall churn rate of **26.54%**, with particularly high churn among month-to-month customers, customers in their first 12 months, fiber-optic customers, customers without tech support, and customers using electronic check payments.
+
+An exploratory risk segmentation also demonstrated that customers with multiple observed risk characteristics had substantially higher churn rates, increasing from **2.53% for risk score 0** to **72.33% for risk score 5**.
+
+These findings provide a basis for targeted retention experiments and further investigation, particularly around early customer experience, contract type, technical support, fiber-optic service, payment experience, and customers displaying multiple risk characteristics.
+
+Overall, the project demonstrates an end-to-end data analytics workflow covering **data cleaning, exploratory analysis, SQL analysis, customer segmentation, data visualisation, dashboard development, and business-focused interpretation**.
