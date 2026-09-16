@@ -175,3 +175,19 @@ Rather than assuming the payment method itself causes churn, the company should 
 The exploratory risk analysis showed that churn increased from **2.53% at risk score 0** to **72.33% at risk score 5**.
 
 Customers displaying several observed risk characteristics could therefore be prioritised for retention experiments, while the effectiveness of those interventions should be measured before wider implementation.
+
+## Power BI Dashboard
+
+The Power BI report provides an interactive view of customer churn, combining executive-level KPIs with detailed analysis of churn drivers and customer risk.
+
+### Executive Overview
+
+The Executive Overview summarises the overall customer base and highlights churn patterns across contract type, customer tenure, and internet service.
+
+![Executive Overview](executive_overview.png)
+
+### Churn Drivers & Risk Analysis
+
+The second dashboard examines key churn-related characteristics including tech support, payment method, monthly charges, contract and support combinations, and the exploratory customer risk score.
+
+![Churn Drivers and Risk Analysis](churn_drivers_and_risk_analysis.png)
