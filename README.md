@@ -191,3 +191,35 @@ The Executive Overview summarises the overall customer base and highlights churn
 The second dashboard examines key churn-related characteristics including tech support, payment method, monthly charges, contract and support combinations, and the exploratory customer risk score.
 
 ![Churn Drivers and Risk Analysis](churn_drivers_and_risk_analysis.png)
+
+## Repository Structure
+
+```text
+customer-churn-retention-analysis/
+│
+├── data/
+│   └── Telco-Customer-Churn.csv
+│
+├── python/
+│   └── customer_churn_analysis.ipynb
+│
+├── sql/
+│   └── customer_churn_analysis.sql
+│
+├── powerbi/
+│   └── customer_churn_analysis.pbix
+│
+├── images/
+│   ├── executive_overview.png
+│   └── churn_drivers_and_risk_analysis.png
+│
+└── README.md
+```
+
+### How to Explore This Project
+
+- **Python Analysis:** Open `python/customer_churn_analysis.ipynb` to review the data cleaning, exploratory analysis, visualisations, and customer risk segmentation.
+- **SQL Analysis:** Open `sql/customer_churn_analysis.sql` to review the MySQL queries used to analyse churn patterns and customer segments.
+- **Power BI Dashboard:** Open `powerbi/customer_churn_analysis.pbix` in Power BI Desktop to explore the interactive dashboard.
+- **Dashboard Preview:** The dashboard screenshots above provide a quick view of the final Power BI report without requiring Power BI Desktop.
+- **Dataset:** The source dataset used for the analysis is stored in the `data` folder.
