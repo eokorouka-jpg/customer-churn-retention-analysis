@@ -135,3 +135,43 @@ Observed churn increased as the number of risk characteristics increased:
 Customers with scores of **4–5** were classified as the exploratory **High Risk** segment. This group contained **1,656 customers** and had an observed churn rate of **62.08%**.
 
 > **Note:** The risk score is an exploratory rule-based segmentation developed from patterns observed in this dataset. It is not a predictive machine-learning model and would require validation on unseen data before being used for prediction.
+
+## Business Recommendations
+
+Based on the observed churn patterns, the following areas could be prioritised for further investigation and retention testing:
+
+### 1. Strengthen Early-Customer Retention
+
+Customers within their first 12 months had the highest tenure-based churn rate at **47.44%**.
+
+The business could test enhanced onboarding, proactive check-ins, and early customer-support initiatives during the first year to determine whether these interventions improve retention.
+
+### 2. Review the Month-to-Month Customer Experience
+
+Month-to-month customers recorded a **42.71% churn rate**, compared with 11.27% for one-year and 2.83% for two-year contracts.
+
+The company could investigate why customers remain on month-to-month plans and test appropriate incentives or benefits for customers interested in longer-term contracts.
+
+### 3. Investigate Fiber-Optic Customer Churn
+
+Fiber-optic customers had a **41.89% churn rate**, substantially higher than DSL customers at 18.96%.
+
+Further analysis should examine factors such as pricing, service quality, customer support, and customer characteristics to understand what may be contributing to this pattern.
+
+### 4. Evaluate Tech-Support Retention Initiatives
+
+Customers without tech support had a **41.64% churn rate**, compared with **15.17%** among customers with tech support.
+
+The company could test whether improved access to technical support, proactive assistance, or targeted support offers are associated with improved retention.
+
+### 5. Investigate Electronic-Check Customers
+
+Customers paying by electronic check had the highest payment-method churn rate at **45.29%**.
+
+Rather than assuming the payment method itself causes churn, the company should investigate the characteristics and experiences of this customer segment and test whether payment-related improvements or alternative payment options affect retention.
+
+### 6. Prioritise Customers with Multiple Risk Characteristics
+
+The exploratory risk analysis showed that churn increased from **2.53% at risk score 0** to **72.33% at risk score 5**.
+
+Customers displaying several observed risk characteristics could therefore be prioritised for retention experiments, while the effectiveness of those interventions should be measured before wider implementation.
