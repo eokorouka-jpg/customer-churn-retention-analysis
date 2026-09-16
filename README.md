@@ -43,3 +43,95 @@ The project followed an end-to-end analytics workflow:
 7. **Power BI Dashboard** — Developed a two-page interactive dashboard covering executive KPIs, churn drivers, and customer risk.
 8. **Business Recommendations** — Translated the analytical findings into retention-focused areas for further investigation and testing.
 
+## Key Findings
+
+### 1. Overall Customer Churn
+
+- The dataset contains **7,043 customers**.
+- **1,869 customers churned**, while **5,174 customers were retained**.
+- The overall customer churn rate was **26.54%**.
+
+### 2. Contract Type
+
+Contract type showed a strong association with customer churn:
+
+- **Month-to-month:** 42.71%
+- **One-year contract:** 11.27%
+- **Two-year contract:** 2.83%
+
+Customers on month-to-month contracts had substantially higher churn than customers on longer-term contracts.
+
+### 3. Customer Tenure
+
+Churn was highest among customers earlier in their relationship with the company:
+
+- **0–12 months:** 47.44%
+- **13–24 months:** 28.71%
+- **25–48 months:** 20.39%
+- **49–72 months:** 9.51%
+
+This pattern suggests that the early customer lifecycle is an important area for retention analysis and intervention testing.
+
+### 4. Internet Service
+
+Churn varied considerably across internet service types:
+
+- **Fiber optic:** 41.89%
+- **DSL:** 18.96%
+- **No internet service:** 7.40%
+
+Fiber-optic customers had the highest observed churn rate, indicating that their pricing, service experience, and other characteristics warrant further investigation.
+
+### 5. Tech Support
+
+Customers without tech support experienced considerably higher churn:
+
+- **No tech support:** 41.64%
+- **Tech support:** 15.17%
+- **No internet service:** 7.40%
+
+Among month-to-month customers without tech support, churn reached **50.37%**.
+
+### 6. Payment Method
+
+Electronic check customers recorded the highest churn rate among payment methods:
+
+- **Electronic check:** 45.29%
+- **Mailed check:** 19.11%
+- **Bank transfer (automatic):** 16.71%
+- **Credit card (automatic):** 15.24%
+
+### 7. Monthly Charges
+
+Churned customers also had higher average monthly charges:
+
+- **Churned customers:** $74.44
+- **Retained customers:** $61.27
+- **Difference:** $13.17
+
+These results show an association between higher monthly charges and churn, although the analysis does not establish that higher charges directly cause customers to leave.
+
+### 8. Exploratory Customer Risk Segmentation
+
+A rule-based risk score was created using five characteristics associated with higher churn in the dataset:
+
+- Month-to-month contract
+- Tenure of 12 months or less
+- Fiber-optic internet service
+- No tech support
+- Electronic check payment
+
+Observed churn increased as the number of risk characteristics increased:
+
+| Risk Score | Churn Rate |
+|---:|---:|
+| 0 | 2.53% |
+| 1 | 7.34% |
+| 2 | 18.99% |
+| 3 | 35.46% |
+| 4 | 56.42% |
+| 5 | 72.33% |
+
+Customers with scores of **4–5** were classified as the exploratory **High Risk** segment. This group contained **1,656 customers** and had an observed churn rate of **62.08%**.
+
+> **Note:** The risk score is an exploratory rule-based segmentation developed from patterns observed in this dataset. It is not a predictive machine-learning model and would require validation on unseen data before being used for prediction.
