@@ -21,5 +21,25 @@ The project investigates the following questions:
 - Which combinations of customer characteristics are associated with particularly high churn?
 - Can customers be grouped into exploratory risk segments based on multiple churn-related characteristics?
 
+## Tools & Technologies
 
+- **Python** — Data cleaning, exploratory data analysis, churn analysis, customer risk segmentation, and visualisation using Pandas and Matplotlib.
+- **MySQL** — Data quality checks, aggregation, customer segmentation, and SQL-based analysis of churn patterns.
+- **Power BI** — Interactive dashboard development, KPI reporting, DAX measures, customer segmentation, and visualisation of key churn drivers.
+- **Jupyter Notebook** — Development and documentation of the Python analysis.
+- **MySQL Workbench** — SQL database management and query development.
+- **GitHub** — Project documentation and portfolio presentation.
+
+## Project Workflow
+
+The project followed an end-to-end analytics workflow:
+
+1. **Data Preparation** — Imported the customer churn dataset and reviewed its structure, data types, missing values, and duplicates.
+2. **Data Cleaning** — Converted `TotalCharges` to a numeric field while retaining 11 new customers whose original values were blank.
+3. **Exploratory Data Analysis** — Examined customer characteristics and overall churn patterns.
+4. **Churn Driver Analysis** — Analysed churn across contract type, tenure, internet service, tech support, payment method, and monthly charges.
+5. **Customer Risk Segmentation** — Created an exploratory rule-based risk score using multiple characteristics associated with churn in the dataset.
+6. **SQL Analysis** — Reproduced and extended the business analysis in MySQL using aggregation, conditional logic, and customer segmentation.
+7. **Power BI Dashboard** — Developed a two-page interactive dashboard covering executive KPIs, churn drivers, and customer risk.
+8. **Business Recommendations** — Translated the analytical findings into retention-focused areas for further investigation and testing.
 
