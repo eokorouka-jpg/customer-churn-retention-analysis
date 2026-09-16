@@ -1,2 +1,9 @@
 # customer-churn-retention-analysis
-Exploratory Data Analysis
+customer-churn-retention-analysis/
+│
+├── README.md
+├── data/
+├── python/
+├── sql/
+├── powerbi/
+└── images/
